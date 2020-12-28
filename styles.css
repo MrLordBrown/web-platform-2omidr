@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: orange;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "A B C D E F G H I J"
+  "K L M N O P Q R S T"
+  "U V W X Y Z a b c d"
+  "e f g h i j k l m n"
+  "o p q r s t u v w x";
+  grid-template-columns: repeat(10,10vw);
+  grid-template-rows: repeat(5,18vh);
+}
+
+#A {
+  grid-area: A;
+  background-color: black;
+}
+
+#B {
+  grid-area: B;
+  background-color: yellow;
+}
+
+#C {
+  grid-area: C;
+  background-color: blueviolet;
+}
+
+#d {
+  grid-area: d;
+  background-color: red;
+}
+
